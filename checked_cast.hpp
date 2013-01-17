@@ -18,6 +18,9 @@
   *  Boston, MA 02111-1307 USA 
   *****************************************************************************/ 
 
+#ifndef schorny_CHECKED_CAST_HPP_INCLUDED
+#define schorny_CHECKED_CAST_HPP_INCLUDED
+
 #include<exception> 
 #include<typeinfo> 
 #include<cassert> 
@@ -177,3 +180,4 @@ inline T checked_cast(X const& x)
    return hidden::checked_cast_impl<T, X, hidden::IsPtr<X>::value>::cast(x, hidden::LookUpHelper2()); 
 } 
    
+#endif
