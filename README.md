@@ -9,7 +9,7 @@ dynamic_cast in C++ requires RTTI lookups and is therefore very slow. It ensures
 
 Use
 ============
-checked_cast is basically just a dynamic_cast which turns to a static_cast in debug situations.
+checked_cast is basically just a dynamic_cast which turns to a static_cast in non-debug situations.
 
 Sample
 ============
